@@ -4,6 +4,7 @@
 
 .catalog__order {
     margin-bottom: 30px;
+    min-height: 48px;
 }
 
 .catalog__title {
