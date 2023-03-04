@@ -6,3 +6,10 @@ catalogOrderButton.onclick = function() {
     catalogOrder.classList.toggle('order_open');
   
 };
+
+
+let orderCloseButton = document.querySelector('.order__close');
+orderCloseButton.onclick = function() {
+    catalogOrder.classList.remove('order_open');
+  
+};
