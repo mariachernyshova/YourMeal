@@ -22,6 +22,7 @@
 .product__price {
     margin-bottom: 4px;
 
+    font-size: 16px;
     font-weight: 600;
     line-height: 100%;
     
@@ -59,4 +60,38 @@
     font-size: 12px;
     line-height: 100%;
     color: #000000; /* !todo hover */
+}
+
+@media (min-width: 1024px) {
+    .product {
+        padding: 12px;
+        min-height: 411px;
+        border-radius: 18px;
+    }
+    
+    .product_image {
+        margin-bottom: 16px;
+        height: 220px;
+        border-radius: 12px;
+    }
+    
+    .product__price {
+        margin-bottom: 8px;
+        font-size: 24px;
+    }
+    
+    .product__title {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .product__weight {
+        font-size: 16px;
+    }
+    
+    .product__add {
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 16px;
+    }
 }
