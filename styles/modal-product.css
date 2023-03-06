@@ -1,0 +1,83 @@
+.modal-product {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-height: 100%;
+
+    padding: 32px 10px;
+    display: flex;
+}
+
+.modal-product__container {
+    margin: 0 auto;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-product__title {
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+}
+
+.modal-product__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-product__image {
+    margin-bottom: 16px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.modal-product__description {
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+.modal-product__ingredients {
+    flex-grow: 1;
+    margin-bottom: 10px;
+
+    font-size: 10px;
+    line-height: 130%;
+}
+
+.modal-product__add {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-product__btn {
+    flex-grow: 1;
+
+    padding: 9px;
+
+    background: #FF7020;
+    border-radius: 8px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.modal__product-price {
+    text-align: right;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+}
+
