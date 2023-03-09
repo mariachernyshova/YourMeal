@@ -19,9 +19,24 @@ productDetailButtonList.forEach(btn => {
     });
 });
 
+/* Модалка корзины*/
+let modalDelivery = document.querySelector('.modal_delivery');
+let orderSubmitButton = document.querySelector('.order__submit');
+orderSubmitButton.onclick = function() {
+    modalDelivery.classList.toggle('modal__open');
+  
+};
+
 /* Закрытие модалок*/
-let openModal = document.querySelector('.modal_product');
-let modalCloseButton = document.querySelector('.modal__close');
-modalCloseButton.addEventListener('click', () => {
-    openModal.classList.remove('modal__open');
+let modalCloseButtonList = document.querySelectorAll('.modal__close');
+
+let openModalProduct = document.querySelector('.modal_product');
+let openModalDelivery = document.querySelector('.modal_delivery');
+
+modalCloseButtonList.forEach(btn => {
+    btn.addEventListener('click', () => {
+        openModalProduct.classList.remove('modal__open');
+        openModalDelivery.classList.remove('modal__open');
+    });
 });
+
