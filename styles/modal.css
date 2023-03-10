@@ -37,6 +37,13 @@
 
 @media(min-width: 480px) {
     .modal {
-        padding: 10px;
+        padding: 20px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .modal__close {
+        top: 24px;
+        right: 24px;
     }
 }
