@@ -1,4 +1,6 @@
 .product {
+    /* position: relative; */
+
     padding: 4px;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,28 @@
 }
 
 .product__detail {
-    outline: none; /* !todo outline */
+    outline: none;
+    transition: color .2s ease-in-out;
+}
+.product__detail:focus-visible,
+.product__detail:hover {
+    color: #F86310;
+}
+.product__detail::after {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    outline: 1px solid transparent;
+    border-radius: 12px; /*!todo адаптив радиуса*/
+    inset: 0;
+}
+.product__detail:focus-visible::after {
+    outline-color: #F86310;
+}
+@supports not selector(::focus-visible) {
+    .product__detail:focus {
+        outline-color: #F86310;
+    }
 }
 
 .product__weight {
@@ -59,7 +82,26 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
-    color: #000000; /* !todo hover */
+    color: #000000;
+    transition: transform .1s ease, background-color .3s ease-in-out;
+}
+.product__add:hover {
+    background-color: #FFAB08;
+}
+.product__add:focus-visible {
+    background-color: #F86310;
+}
+.product__add:active {
+    transform: translate(1px, 2px);
+}
+.product__add:disabled {
+    color: #ACACAC;
+    background-color: #F9F9F9;
+}
+@supports not selector(::focus-visible) {
+    .product__add:focus {
+        background-color: #F86310;
+    }
 }
 
 @media (min-width: 1024px) {

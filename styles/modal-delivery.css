@@ -129,13 +129,35 @@
 .modal-delivery__submit {
     padding: 9px;
 
-    background: #FF7020;
+    background-color: #FF7020;
     border-radius: 8px;
 
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     color: #FFFFFF;
+
+    transition: transform .1s ease, background-color .3s ease-in-out;
+}
+
+.modal-delivery__submit:hover {
+    background-color: #FFAB08;
+}
+.modal-delivery__submit:focus-visible {
+    background-color: #F86310;
+
+}
+.modal-delivery__submit:active {
+    transform: translate(1px, 2px);
+}
+.modal-delivery__submit:disabled {
+    color: #ACACAC;
+    background-color: #F9F9F9;
+}
+@supports not selector(::focus-visible) {
+    .modal-delivery__submit:focus {
+        background: #F86310;
+    }
 }
 
 @media (min-width: 480px) {
