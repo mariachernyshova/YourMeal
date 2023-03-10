@@ -12,7 +12,7 @@ orderCloseButton.addEventListener('click', () => {
 
 /* Модалка карточки*/
 let modalProduct = document.querySelector('.modal_product');
-let productDetailButtonList = document.querySelectorAll('.product__detail');
+let productDetailButtonList = document.querySelectorAll('.product__detail,.product__add');
 productDetailButtonList.forEach(btn => {
     btn.addEventListener('click', () => {
         modalProduct.classList.add('modal__open');
